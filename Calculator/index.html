@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="box">
+    <input type="text" id="display" disabled>
+
+    <div id="buttons">
+      <input type="button" class="button" value="&#9003;" onclick="backspace()">
+      <input type="button" class="button" value="AC" onclick="clearDisplay()">
+      <input type="button" class="button" value="%" onclick="append('%')">
+      <input type="button" class="button" value="÷" onclick="append('/')">
+      <br>
+      <input type="button" class="button" value="7" onclick="append('7')">
+      <input type="button" class="button" value="8" onclick="append('8')">
+      <input type="button" class="button" value="9" onclick="append('9')">
+      <input type="button" class="button" value="×" onclick="append('*')">
+      <br>
+      <input type="button" class="button" value="4" onclick="append('4')">
+      <input type="button" class="button" value="5" onclick="append('5')">
+      <input type="button" class="button" value="6" onclick="append('6')">
+      <input type="button" class="button" value="−" onclick="append('-')">
+      <br>
+      <input type="button" class="button" value="1" onclick="append('1')">
+      <input type="button" class="button" value="2" onclick="append('2')">
+      <input type="button" class="button" value="3" onclick="append('3')">
+      <input type="button" class="button" value="+" onclick="append('+')">
+      <br>
+      <input type="button" class="button" value="00" onclick="append('00')">
+      <input type="button" class="button" value="0" onclick="append('0')">
+      <input type="button" class="button" value="." onclick="append('.')">
+      <input type="button" class="button equal" value="=" onclick="calculate()">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
